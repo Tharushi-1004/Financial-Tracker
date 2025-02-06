@@ -1,0 +1,110 @@
+/* Import Font Dancing Script */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #d3a58b; /* Light brown background */
+    font-family: Arial;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #8d6e63; /* Brown color */
+    color: #fff; /* White text color */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    background-color: #4e342e; /* Darker brown for active link */
+}
+
+/* NavbarTop */
+.navbar-top {
+    background-color: #d2b48c; /* Light brown background */
+    color: #333;
+    box-shadow: 0px 4px 8px 0px grey;
+    height: 70px;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    padding-top: 15px;
+    position: absolute;
+    left: 45%;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    margin-top: 2%;
+    padding: 0 10px;
+}
+
+.main h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+
+.edit {
+    position: absolute;
+    color: #e7e7e8;
+    right: 14%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
